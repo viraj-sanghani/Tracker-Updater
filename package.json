@@ -1,0 +1,54 @@
+{
+  "name": "Tracker",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@electron/remote": "^2.0.8",
+    "auto-launch": "^5.0.5",
+    "axios": "^0.27.2",
+    "check-internet-connected": "^2.0.6",
+    "electron": "^20.0.1",
+    "electron-is-dev": "^1.2.0",
+    "electron-log": "^4.4.8",
+    "electron-packager": "^16.0.0",
+    "electron-reload": "^2.0.0-alpha.1",
+    "electron-updater": "^5.2.1",
+    "electron-wix-msi": "^4.0.0",
+    "lepikevents": "^1.5.13"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "electron test.js",
+    "build": "electron-builder --build"
+  },
+  "build": {
+    "appId": "",
+    "publish": {
+      "provider": "github",
+      "owner": "viraj-sanghani",
+      "repo": "Tracker-Updater"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "electron-builder": "^23.3.3"
+  }
+}
